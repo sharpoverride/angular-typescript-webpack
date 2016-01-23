@@ -1,10 +1,5 @@
 import Color from "../core/Color";
-
-class DashboardModel {
-	name: string = "";
-	occupation: string = "";
-	color: number = null;
-}
+import DashboardModel from "./DashboardModel";
 
 export default class DashboardController {
 	model: DashboardModel = new DashboardModel();
