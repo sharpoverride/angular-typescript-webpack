@@ -19,7 +19,7 @@ export default class DashboardController {
 	}
 
 	initLookups() {
-		this.colors = Object.keys(Color).map((x: string) => {
+		this.colors = Object.keys(Color).map(x => {
 			return {
 				id: Color[x],
 				name: x
