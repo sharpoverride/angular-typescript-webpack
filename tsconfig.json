@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": false,
     "module": "commonjs",
     "sourceMap": true
   },
