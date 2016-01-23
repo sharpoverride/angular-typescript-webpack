@@ -9,13 +9,6 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.js$/,
-				loader: "babel-loader",
-				query: {
-					presets: ["es2015"]
-				}
-			},
-			{
 				test: /\.html$/,
 				loader: "html-loader"
 			},
@@ -27,6 +20,6 @@ module.exports = {
 	},
 
 	resolve: {
-		extensions: ["", ".js", ".ts"]
+		extensions: ["", ".ts"]
 	}
 };
