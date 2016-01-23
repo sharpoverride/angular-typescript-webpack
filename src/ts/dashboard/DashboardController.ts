@@ -3,7 +3,7 @@ import Color from "../core/Color";
 class DashboardModel {
 	name: string = "";
 	occupation: string = "";
-	color: number = 0;
+	color: number = null;
 }
 
 export default class DashboardController {
@@ -32,6 +32,8 @@ export default class DashboardController {
 
 		if (this.selectedColor) {
 			this.model.color = this.selectedColor.id;
+		} else {
+			this.model.color = null;
 		}
 	}
 }
