@@ -1,8 +1,4 @@
-interface IColor {
-	[key: string]: number;
-}
-
-var Color: IColor = {
+var Color = {
 	Red: 0,
 	Blue: 1,
 	Green: 2

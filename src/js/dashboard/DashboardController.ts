@@ -21,7 +21,7 @@ export default class DashboardController {
 	initLookups() {
 		this.colors = Object.keys(Color).map(x => {
 			return {
-				id: Color[x],
+				id: (<any>Color)[x],
 				name: x
 			};
 		});
