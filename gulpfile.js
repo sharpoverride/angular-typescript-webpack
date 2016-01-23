@@ -18,8 +18,8 @@ gulp.task("default", function() {
 	gulp.watch(["./src/**/*.less"], ["less"]);
 
 	gulp.watch([
-		"./src/js/**/*.html",
-		"./src/js/**/*.ts"
+		"./src/ts/**/*.html",
+		"./src/ts/**/*.ts"
 	], ["webpack"]);
 });
 
