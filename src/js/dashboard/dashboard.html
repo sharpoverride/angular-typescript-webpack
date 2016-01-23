@@ -1,0 +1,36 @@
+<div class="dashboard">
+	<div class="form-horizontal">
+
+		<div class="form-group">
+			<label class="control-label col-xs-5">Name</label>
+			<div class="col-xs-7">
+				<input type="text" class="form-control" ng-model="ctrl.model.name">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-xs-5">Occupation</label>
+			<div class="col-xs-7">
+				<input type="text" class="form-control" ng-model="ctrl.model.occupation">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-xs-5">Color</label>
+			<div class="col-xs-7">
+				<select class="form-control" ng-options="item.name for item in ctrl.colors" ng-model="ctrl.selectedColor">
+					<option value=""></option>
+				</select>
+			</div>
+		</div>
+
+		<div class="text-right">
+			<button type="button" class="btn btn-primary" ng-click="ctrl.onSubmitClick()">Submit</button>
+		</div>
+
+	</div>
+
+	<div class="output" ng-show="ctrl.submitted">
+		<pre>{{ctrl.model | json}}</pre>
+	</div>
+</div>
