@@ -2,9 +2,6 @@
   "name": "angular-typescript-webpack",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "plato": "plato -r -d report src\\js"
-  },
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.0",
