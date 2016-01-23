@@ -2,7 +2,12 @@ var template = require("./dashboard.html");
 
 import controller from "./DashboardController";
 
-export default function dashboard($compile, $timeout, $window) {
+export default function dashboard(
+		$compile: ng.ICompileService,
+		$timeout: ng.ITimeoutService,
+		$window: ng.IWindowService
+	) {
+
 	return {
 		restrict: "E",
 		template,
@@ -12,7 +17,7 @@ export default function dashboard($compile, $timeout, $window) {
 		controller,
 		controllerAs: "ctrl",
 
-		link: function(scope, elem, attrs) {
+		link: function(scope: ng.IScope, elem: Element, attrs: any) {
 		}
 	};
 }
