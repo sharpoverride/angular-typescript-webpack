@@ -4,7 +4,7 @@ class DashboardModel {
 	name: string = "";
 	occupation: string = "";
 	color: number = 0;
-};
+}
 
 export default class DashboardController {
 	model: DashboardModel = new DashboardModel();
