@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
+    "noImplicitAny": true,
     "module": "commonjs",
     "sourceMap": true
   },
+  "compileOnSave": false,
   "files": [
     "src/js/app.ts",
     "typings/tsd.d.ts"
